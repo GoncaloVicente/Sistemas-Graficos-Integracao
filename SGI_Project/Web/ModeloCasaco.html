@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Projeto SGINT</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div align="left">
+        <canvas id="Canvas"></canvas>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <label>Ferramentas:
+                <select id="menu_loop">
+                    <option value="1">Cores</option>
+                    <option value="2">Vistas</option>
+                    <option value="3">Iluminação</option>
+                </select>
+            </label>
+        </div>
+        <div class="col-md-3">
+            <div style="display: none" id="cores">
+                <button id="btn_text" style="background-image: url(Imagens/Casaco/blueJacket_Texture.JPG);width:15%;min-height: 50px;border: 1px solid black"></button>
+                &nbsp;&nbsp;&nbsp;
+                <button id="btn_verde" style="background-color: green;width:15%;min-height: 50px;border: 1px solid black"></button>
+                &nbsp;&nbsp;
+               <select id="menu_peca">
+                    <option value="1">Casaco</option>
+                    <option value="2">Cinto</option>
+                </select>
+            </div>
+            <div style="display: none" id="vistas">
+                <button type="button" class="btn btn-secondary" id="btn_frente" style="width: 25%">Frente</button>
+                &nbsp;
+                <button type="button" class="btn btn-secondary" id="btn_tras" style="width: 25%">Trás</button>
+            </div>
+            <div style="display: none" id="iluminacao">
+                <button type="button" class="btn btn-secondary" id="btn_base" style="width: 35%">Predefinição</button>
+                <button type="button" class="btn btn-secondary" id="btn_ambiente" style="width: 35%">Ambiente</button>
+                <br/>
+                <br/>
+                <button id="btn_branco" style="background-color: white;width:15%;min-height: 50px;border: 1px solid black"></button>
+                &nbsp;&nbsp;&nbsp;
+                <button id="btn_azul" style="background-color: deepskyblue;width:15%;min-height: 50px;border: 1px solid black"></button>
+                <br/>
+                <br/>
+                <div>
+                    <label>Intensidade - Predefinição</label>
+                    <input type="range" class="form-control-range" id="controlo_intensidade_pre">
+                    <span id="valor_pre">1</span>
+                </div>
+                <div style="display: none" id="luzAmbiente">
+                    <label>Intensidade - Ambiente</label>
+                    <input type="range" class="form-control-range" id="controlo_intensidade_ambiente">
+                    <span id="valor_ambiente">1</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/three.js"></script>
+    <script src="js/GLTFLoader.js"></script>
+    <script src="js/OrbitControls.js"></script>
+    
+    <script src="ModeloCasacoJS.js"></script>
+</body>
+</html>
+
+

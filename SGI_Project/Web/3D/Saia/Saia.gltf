@@ -1,0 +1,237 @@
+{
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5123,
+            "count" : 1008,
+            "max" : [
+                188
+            ],
+            "min" : [
+                0
+            ],
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 189,
+            "max" : [
+                582.722412109375,
+                483.1258239746094,
+                470.782470703125
+            ],
+            "min" : [
+                -584.1259765625,
+                -441.962890625,
+                -465.525634765625
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 189,
+            "max" : [
+                0.9922788143157959,
+                0.9949033856391907,
+                0.2719809412956238
+            ],
+            "min" : [
+                -0.9853205680847168,
+                -0.9959715604782104,
+                -0.2786034643650055
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5126,
+            "count" : 189,
+            "max" : [
+                0.9935241341590881,
+                0.4946812391281128,
+                0.9957526922225952,
+                1.0
+            ],
+            "min" : [
+                -0.24626724421977997,
+                -0.7468233704566956,
+                -0.9963598847389221,
+                1.0
+            ],
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 189,
+            "max" : [
+                1.7812968492507935,
+                3.0901107788085938
+            ],
+            "min" : [
+                -3.468797206878662,
+                -2.0738699436187744
+            ],
+            "type" : "VEC2"
+        }
+    ],
+    "asset" : {
+        "generator" : "Khronos Blender glTF 2.0 exporter",
+        "version" : "2.0"
+    },
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 2016,
+            "byteOffset" : 0,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2268,
+            "byteOffset" : 2016,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2268,
+            "byteOffset" : 4284,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 3024,
+            "byteOffset" : 6552,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1512,
+            "byteOffset" : 9576,
+            "target" : 34962
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 11088,
+            "uri" : "Saia.bin"
+        }
+    ],
+    "images" : [
+        {
+            "name" : "skirt_Texture.JPG",
+            "uri" : "skirt_Texture.JPG.jpg"
+        }
+    ],
+    "materials" : [
+        {
+            "name" : "Textura",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.6400000190734865,
+                    0.6400000190734865,
+                    0.6400000190734865,
+                    1.0
+                ],
+                "baseColorTexture" : {
+                    "index" : 0
+                },
+                "metallicFactor" : 0.0
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Plane.000",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "NORMAL" : 2,
+                        "POSITION" : 1,
+                        "TANGENT" : 3,
+                        "TEXCOORD_0" : 4
+                    },
+                    "indices" : 0,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "Camera",
+            "rotation" : [
+                0.6008511781692505,
+                0.16430921852588654,
+                -0.1351400464773178,
+                0.7705308198928833
+            ],
+            "scale" : [
+                19.50452995300293,
+                19.50452995300293,
+                19.50452995300293
+            ],
+            "translation" : [
+                118.86186981201172,
+                183.84149169921875,
+                225.20037841796875
+            ]
+        },
+        {
+            "name" : "Lamp",
+            "rotation" : [
+                0.16907577216625214,
+                0.7558803558349609,
+                -0.27217137813568115,
+                0.570947527885437
+            ],
+            "scale" : [
+                19.504533767700195,
+                19.50452995300293,
+                19.504531860351562
+            ],
+            "translation" : [
+                9.080435752868652,
+                167.70443725585938,
+                141.9247283935547
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "Saia",
+            "rotation" : [
+                0.7071068286895752,
+                0.0,
+                -0.0,
+                0.7071068286895752
+            ],
+            "scale" : [
+                0.023975679650902748,
+                0.023975679650902748,
+                0.023975679650902748
+            ]
+        }
+    ],
+    "samplers" : [
+        {}
+    ],
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                2,
+                1,
+                0
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        }
+    ]
+}

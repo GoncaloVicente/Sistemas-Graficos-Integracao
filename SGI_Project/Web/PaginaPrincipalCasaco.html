@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Projeto SGINT</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div>
+        <img src="Imagens/TopoPagina.png" alt="Header" class="img-fluid" style="width: 100%">
+    </div>
+    <br/>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <img src="Imagens/Casaco/image_site_1.jpg" alt="ImagemPequena1" width=63% height=16% vspace="15%" hspace="30%" onclick="imagem1()" style="padding: 1px; background-color: black"/>
+                <br/>
+                <img src="Imagens/Casaco/image_site_4.jpg" alt="ImagemPequena2" width=63% height=16% vspace="10%" hspace="30%" onclick="imagem2()" style="padding: 1px; background-color: black"/>
+                <br/>
+                <img src="Imagens/Casaco/image_site_5.jpg" alt="ImagemPequena3" width=63% height=16% vspace="10%" hspace="30%" onclick="imagem3()" style="padding: 1px; background-color: black"/>
+            </div>
+            <div class="col-md-7">
+                <img src="Imagens/Casaco/image_site_1.jpg" alt="ImagemGrande1" width=95% height=95% vspace="15%" id="ImagemGrande"/>
+            </div>
+            <div class="col-md-3">
+                <p class="font-weight-bold" style="font-size: 110%">Casaco Azul</p>
+                <p><u>Ver detalhes</u></p>
+                <a href="ModeloCasaco.html">Modelo 3D</a>
+                <br/>
+                <img src="Imagens/Casaco/blueJacket_Texture.JPG" alt="Cor1" width=20% height=8% vspace="10%" style="border-radius:50%; padding: 1px ; background-color: black" onclick="corText()"/>
+                <img src="Imagens/Casaco/verde.png" alt="Cor2" width=20% height=8% vspace="10%" style="border-radius:50% ; padding: 1px ; background-color: black" onclick="corVerde()" />
+                <img src="Imagens/Tamanhos.PNG" alt="tamanho" vspace="10%" class="img-fluid"/>
+                <p style="font-size: 120%">30.00€</p>
+                 <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                </select>
+                <button type="button" class="btn btn-dark">JUNTAR AO CARRINHO</button>
+                <img src="Imagens/Frases.PNG" alt="frases" style="width: auto" vspace="10px"/>
+            </div>
+        </div>
+    </div>
+    <br/><br/><br/>
+    <div align="middle">
+        <p class="font-weight-bold" style="font-size: 150%" align="middle">Combina com:</p>
+        <img src="Imagens/Saia/image_site_5.jpg" alt="Saia" width=9% height=8% align="middle" onclick="mudarCasaco()" style="padding: 1px; background-color: black"/> 
+        <p style="font-size: 110%" align="middle">Saia com folhos</p>
+    </div>
+    <script>
+        var estadoCor=0;
+
+        function corText(){
+            document.getElementById("ImagemGrande").src="Imagens/Casaco/image_site_1.jpg";
+            estadoCor=0;
+        }
+
+        function corVerde(){
+            document.getElementById("ImagemGrande").src="Imagens/Casaco/image_site_1_verde.png";
+            estadoCor=1;
+        }
+
+        function imagem1(){
+            if(estadoCor==0){
+                document.getElementById("ImagemGrande").src="Imagens/Casaco/image_site_1.jpg";
+            }
+            if(estadoCor==1){
+                document.getElementById("ImagemGrande").src="Imagens/Casaco/image_site_1_verde.png";
+            }
+        }
+
+        function imagem2(){
+            if(estadoCor==0){
+                document.getElementById("ImagemGrande").src="Imagens/Casaco/image_site_4.jpg";
+            }
+            if(estadoCor==1){
+                document.getElementById("ImagemGrande").src="Imagens/Casaco/image_site_4_verde.png";
+            }
+        }
+
+        function imagem3(){
+            if(estadoCor==0){
+                document.getElementById("ImagemGrande").src="Imagens/Casaco/image_site_5.jpg";
+            }
+            if(estadoCor==1){
+                document.getElementById("ImagemGrande").src="Imagens/Casaco/image_site_5_verde.png";
+            }
+        }   
+
+        function mudarCasaco(){
+            window.location.href = "PaginaPrincipalSaia.html";
+        }
+    </script>
+    
+</body>
+</html>
+
